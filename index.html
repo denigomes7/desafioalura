@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Criptografia</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./assets/logo.png" alt="Logo da Alura" class="logo">
+    </header>
+
+    <main class="conteudo">
+        <!--lado esquerdo--> 
+        <div class="lado_esquerdo">
+            <div class="area_texto">
+                <h2>Digite seu texto</h2>
+                <textarea id="text-input" class="text-input"></textarea>
+            </div>
+
+            <!--sessão dos botoes embaixo da caixa de texto-->
+            <section class="partebaixa">
+                <div class="informa_texto">
+                    <img src="./assets/info.png" alt="info">
+                </div>
+
+                <!--Botoes-->
+                <div class="buttons">
+                    <button id="botao_encriptar" class="botao_encriptar">Criptografar</button>
+                    <button id="botao_decriptar" class="botao_decriptar">Descriptografar</button>
+                </div>
+            </section>
+        </div>
+
+        <!--lado direito-->
+        <div class="lado_direto">
+            <p>Resultado da Criptografia</p>
+            <textarea wrap="hard" id="output-text" readonly placeholder="" class="texto-resultado"></textarea>
+            <button id="botao_copiar" class="botao_copiar">Copiar Texto</button>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Denilson Jorge Gomes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
